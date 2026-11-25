@@ -4,9 +4,11 @@ tracing-flare 是一个纯 Rust 日志库，以 `tracing` 事件为输入，以 
 Layer 组合，内置有界队列、单 writer、文件 sink、轮转和压缩。它不依赖 Python、PyO3 或
 `tracing-appender`。
 
-当前版本为 `0.1.0`，尚未发布到 crates.io。公共枚举和结构体标记为
-`#[non_exhaustive]`，0.x 阶段可以新增字段或变体，外部 `match` 需要保留 `_` 分支。
+当前版本为 `0.1.0`。公共枚举和结构体标记为 `#[non_exhaustive]`，0.x 阶段可以新增
+字段或变体，外部 `match` 需要保留 `_` 分支。
 
+- crates.io：`tracing-flare = "0.1"`
+- 文档：https://docs.rs/tracing-flare
 - 最低支持 Rust 版本（MSRV）：1.82
 - 仓库开发工具链：1.100.0
 - 许可证：MIT
@@ -22,13 +24,11 @@ Layer 组合，内置有界队列、单 writer、文件 sink、轮转和压缩�
 
 ## 安装
 
-仓库尚未发布 crates.io，可通过 Git 依赖使用：
-
 ```toml
 [dependencies]
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["registry", "std"] }
-tracing-flare = { git = "https://github.com/0xferdv/tracing-flare" }
+tracing-flare = "0.1"
 ```
 
 如果在本地开发，也可以使用 path 依赖：
@@ -313,7 +313,7 @@ interval 必须为 1。时间规则使用本地时间，除非显式启用 UTC�
 启用 `json` feature 后，每条日志输出为一个 JSON 对象：
 
 ```toml
-tracing-flare = { git = "https://github.com/0xferdv/tracing-flare", features = ["json"] }
+tracing-flare = { version = "0.1", features = ["json"] }
 ```
 
 ```rust
