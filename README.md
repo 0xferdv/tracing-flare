@@ -4,15 +4,6 @@ tracing-flare 是一个纯 Rust 日志库，以 `tracing` 事件为输入，以 
 Layer 组合，内置有界队列、单 writer、文件 sink、轮转和压缩。它不依赖 Python、PyO3 或
 `tracing-appender`。
 
-当前版本为 `0.1.0`。公共枚举和结构体标记为 `#[non_exhaustive]`，0.x 阶段可以新增
-字段或变体，外部 `match` 需要保留 `_` 分支。
-
-- crates.io：`tracing-flare = "0.1"`
-- 文档：https://docs.rs/tracing-flare
-- 最低支持 Rust 版本（MSRV）：1.82
-- 仓库开发工具链：1.100.0
-- 许可证：MIT
-
 ## 特性
 
 - tracing 原生：实现 `Layer`，可以与 `EnvFilter`、`fmt`、OpenTelemetry 等 layer 组合。

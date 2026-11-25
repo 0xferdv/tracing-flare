@@ -1,6 +1,6 @@
 [package]
 name = "tracing-flare"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Tracing-native, pure Rust logging with a self-contained flare core"
 license = "MIT"
