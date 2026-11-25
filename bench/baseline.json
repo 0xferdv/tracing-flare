@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "created": "2026-11-24T14:20:48.213162+00:00",
+  "machine": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "cpu_count": 8,
+    "python": "3.13.12"
+  },
+  "benchmarks": {
+    "e2e/batch_preformatted": {
+      "mean": 647409.9807181918,
+      "lower": 595638.1360234364,
+      "upper": 716512.8839065613
+    },
+    "e2e/batch_reused": {
+      "mean": 991553.3578479582,
+      "lower": 941795.9600096415,
+      "upper": 1072419.5011946957
+    },
+    "e2e/default": {
+      "mean": 8894633.571428573,
+      "lower": 8204756.553571432,
+      "upper": 10002349.735714288
+    },
+    "e2e/message_only": {
+      "mean": 7189910.142857143,
+      "lower": 7044026.478571423,
+      "upper": 7451813.607142857
+    },
+    "e2e/module_chain": {
+      "mean": 8178339.428571428,
+      "lower": 8109415.075000007,
+      "upper": 8266694.867857144
+    },
+    "e2e/rotation_compression": {
+      "mean": 385197295.0,
+      "lower": 339791280.5,
+      "upper": 433607484.6249999
+    },
+    "e2e/size_rotation": {
+      "mean": 20221545.0,
+      "lower": 20075732.0875,
+      "upper": 20374405.0375
+    }
+  }
+}

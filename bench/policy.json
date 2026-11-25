@@ -1,0 +1,8 @@
+{
+  "advisory": [
+    "e2e/size_rotation",
+    "e2e/rotation_compression",
+    "e2e/batch_preformatted",
+    "e2e/batch_reused"
+  ]
+}

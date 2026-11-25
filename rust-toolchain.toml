@@ -1,0 +1,6 @@
+# 本仓库开发、测试、基准和 CI 统一使用 Rust 1.100。
+# 库本身的最低支持版本（MSRV）由 Cargo.toml 的 rust-version = "1.82" 单独承诺。
+[toolchain]
+channel = "1.100.0"
+components = ["rustfmt", "clippy"]
+profile = "minimal"
